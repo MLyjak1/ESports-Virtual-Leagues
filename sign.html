@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/sign.css" />
+    <title>Sign</title>
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header-sign">
+      <div class="header-logo">
+        <img src="image/logo.png" alt="Logo" />
+      </div>
+      <div class="two-section">
+        <div class="head-links">
+          <div class="head-links-item">
+            <a class="head-links-item-link" href="index.html">Home</a>
+            <a class="head-links-item-link" href="forums.html">Forums</a>
+            <a class="head-links-item-link" href="www.google.com">Blog</a>
+          </div>
+    
+    
+          <div class="head-links-item">
+            <a class="head-links-item-link active" href="sign.html">Sign In</a>
+            <a class="head-links-item-link" href="sign.html">Sign Up</a>
+            <a id="myBtnSearch" href="#"><img src="image/search.png" alt="search" /></a>
+          </div>
+    
+    
+    
+        </div>
+        <div class="menu-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- HEADER SEARCH-->
+    <div class="header-box sign-serch-box">
+      <div id="my-modal-header" class="header-box-search">
+        <div class="header-box-search-item">
+          <label>
+            <a href="#" class="btn-close">
+              <svg class="search-icon " xmlns="http://www.w3.org/2000/svg" width="19.985" height="20" viewBox="0 0 19.985 20">
+                <defs>
+                  <style>
+                    .a {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(-0.196)">
+                  <path class="a"
+                    d="M8.432,16.472a8.236,8.236,0,1,1,8.236-8.236,8.245,8.245,0,0,1-8.236,8.236Zm0-14.91a6.675,6.675,0,1,0,6.675,6.675A6.682,6.682,0,0,0,8.432,1.561Zm11.52,18.21a.781.781,0,0,0,0-1.1l-3.493-3.493a.781.781,0,0,0-1.1,1.1l3.493,3.493a.781.781,0,0,0,1.1,0Z" />
+                </g>
+              </svg>
+            </a>
+      
+            <input type="text" class="search-input">
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="sign-chapter">
+      <div class="chapter">
+        <h1>Esports Virtual Leagues</h1>
+        <h2>Esports Virtual Leagues</h2>
+      </div>
+    </div>
+    
+
+    <div class="form-content">
+      <!-- forms  -->
+
+      <form action="POST" class="signIn" id="signIn">
+        <h2>Sign In</h2>
+        <div class="innerform">
+          <input
+            type="email"
+            placeholder="Email Address / Gamertag"
+            name="email"
+          />
+          <div class="dropdown-console">
+            <div class="selected">
+              <img src="image/ps4.png" />
+              <p>PlayStation 4</p>
+              <div class="dropdown-img">
+                <img src="image/dropdown-arrow.png" />
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <div class="select-new">
+                <img src="image/ps4.png" />
+                <p>PlayStation 4</p>
+              </div>
+              <div class="select-new">
+                <img src="image/ps5.png" />
+                <p>PlayStation 5</p>
+              </div>
+              <div class="select-new">
+                <img src="image/xbox.png" />
+                <p>XBox</p>
+              </div>
+              <div class="select-new">
+                <img src="image/xboxx.png" />
+                <p>XBox series X</p>
+              </div>
+              <div class="select-new">
+                <img src="image/pc.png" />
+                <p>Personal Computer</p>
+              </div>
+            </div>
+          </div>
+          <input
+            type="password"
+            placeholder="Password (6 to 12 characters)"
+            name="password"
+          />
+
+          <div class="robot-stack">
+            <div class="checkbox">
+              <div class="item-check">
+                <input type="checkbox" class="check_the_heart" />
+              </div>
+              <p>I'm not a robot</p>
+              <img src="image/secure.png" />
+            </div>
+            <button type="submit">Sign In</button>
+          </div>
+          <div class="sign-here">
+            <p>
+              Already have an account ? Sign
+              <a href="#" id="goRegistration"> Up Here</a>
+            </p>
+          </div>
+        </div>
+      </form>
+      <form action="POST" class="registration" id="registration">
+        <h2>Registration</h2>
+        <div class="innerform">
+          <input type="email" placeholder="Email Address" name="email" />
+          <input type="text" placeholder="Gamertag" name="tag" />
+          <div class="dropdown-console">
+            <div class="selected">
+              <img src="image/ps4.png" />
+              <p>PlayStation 4</p>
+              <div class="dropdown-img">
+                <img src="image/dropdown-arrow.png" />
+              </div>
+            </div>
+            <div class="dropdown-content">
+              <div class="select-new">
+                <img src="image/ps4.png" />
+                <p>PlayStation 4</p>
+              </div>
+              <div class="select-new">
+                <img src="image/ps5.png" />
+                <p>PlayStation 5</p>
+              </div>
+              <div class="select-new">
+                <img src="image/xbox.png" />
+                <p>XBox</p>
+              </div>
+              <div class="select-new">
+                <img src="image/xboxx.png" />
+                <p>XBox series X</p>
+              </div>
+              <div class="select-new">
+                <img src="image/pc.png" />
+                <p>Personal Computer</p>
+              </div>
+            </div>
+          </div>
+          <input
+            type="password"
+            placeholder="Password (6 to 12 characters)"
+            name="password"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="password"
+          />
+
+          <div class="robot-stack">
+            <div class="checkbox">
+              <div class="item-check">
+                <input type="checkbox" class="check_the_heart" />
+              </div>
+              <p>I'm not a robot</p>
+              <img src="image/secure.png" />
+            </div>
+            <button type="submit" id="sign-up-button">Sign Up</button>
+          </div>
+          <div class="sign-here">
+            <p>
+              Already have an account ? Sign
+              <a href="#" id="goSignup"> In Here</a>
+            </p>
+          </div>
+        </div>
+      </form>
+
+      <div class="welcome-content">
+        <h2>Welcome!</h2>
+        <p>
+          We're excited to have you get started. First, you need to confirm your
+          account. Just press the button below.
+        </p>
+        <button class="confirm-account">Confirm Account</button>
+      </div>
+
+      <div class="form-bottom">
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/head.js"></script>
+    <script defer src="js/dropdown.js"></script>
+    <script defer src="js/sign.js"></script>
+    <script defer src="js/modal.js"></script>
+  </body>
+</html>

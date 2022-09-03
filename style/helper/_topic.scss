@@ -1,0 +1,67 @@
+#myBtn {
+  cursor: pointer;
+}
+@mixin topic {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 170px 1fr 270px;
+  height: 50px;
+  button {
+    box-sizing: border-box;
+    width: 100%;
+    background: #080e34 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    font: 500 18px/22px "Montserrat";
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .side {
+    position: relative;
+    height: 100%;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+
+    img {
+      position: absolute;
+      right: 20px;
+      top: 16px;
+    }
+  }
+  .dropdown-news {
+    @include dropdown;
+    .selected {
+      margin-top: 0;
+      border-radius: 1px;
+      border: 1px solid #aaaaaa;
+      height: 100%;
+      .dropdown-img {
+        position: absolute;
+        filter: grayscale(100%);
+        top: 14px;
+      }
+    }
+    .dropdown-content {
+      position: absolute;
+      width: 270px;
+    }
+  }
+
+  @media (max-width: 1124px) {
+    grid-template-columns: 130px 1fr 200px;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 102px 1fr 166px;
+    button {
+      font: 500 15px/22px "Montserrat";
+    }
+    .dropdown-news {
+      .selected {
+        padding: 12px 6px;
+        font: normal normal normal 14px/18px "Montserrat";
+      }
+      .selected .dropdown-img {
+        right: 6px;
+      }
+    }
+  }
+}

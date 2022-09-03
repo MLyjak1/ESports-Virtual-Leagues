@@ -1,0 +1,129 @@
+footer {
+  margin-top: 45px;
+  position: relative;
+  z-index: 99;
+  box-sizing: border-box;
+  width: 100%;
+  background: #2b2b2b;
+  height: 228px;
+  display: flex;
+  justify-content: center;
+
+  .footer-content {
+    width: 1640px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 216px 1fr;
+
+    .header-logo img {
+      width: 100%;
+    }
+  }
+
+  .two-section {
+    margin-top: 40px;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -2px;
+
+    .head-links {
+      display: flex;
+      align-items: center;
+      a {
+        white-space: nowrap;
+        width: 100%;
+        padding: 41px 64px;
+        font: 400 20px/24px "Montserrat";
+        color: #fff;
+        border-left: 1px solid #fff;
+        &:nth-child(4) {
+          padding: 41px 40px;
+        }
+        &.active-alink {
+          color: #d8232a;
+        }
+      }
+      .icons {
+        border-left: 1px solid #fff;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        column-gap: 36px;
+        padding-left: 40px;
+        a {
+          padding: 0;
+          border: none;
+          width: 19px;
+          height: 19px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  footer {
+    height: 148px;
+    .footer-content {
+      grid-template-columns: 137px 1fr;
+      .two-section {
+        margin-top: 24px;
+        height: 45%;
+        .head-links a {
+          padding: 21px 32px;
+          font: 400 16px/24px "Montserrat";
+          &:nth-child(4) {
+            padding: 21px 18px;
+          }
+        }
+        .head-links .icons {
+          column-gap: 24px;
+          padding-left: 24px;
+          a {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    height: 108px;
+    .footer-content {
+      grid-template-columns: 96px 1fr !important;
+      .two-section {
+        border-right: none;
+        .head-links a {
+          padding: 16px 14px;
+          font: 400 14px/16px "Montserrat";
+          border: none;
+        }
+        .head-links .icons {
+          column-gap: 14px;
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  footer .two-section {
+    margin-top: 12px;
+    .head-links {
+      flex-direction: column;
+      .icons {
+        border: none;
+        margin-top: 20px;
+      }
+    }
+  }
+}

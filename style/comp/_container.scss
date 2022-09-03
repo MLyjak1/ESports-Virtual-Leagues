@@ -1,0 +1,36 @@
+.board__sidebar {
+  box-sizing: border-box;
+  margin-top: 16px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  section {
+    box-sizing: border-box;
+    width: 1645px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1230px 390px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1700px) {
+  .board__sidebar section {
+    grid-template-columns: 75% 25%;
+    padding: 0 6px;
+  }
+}
+@media (max-width: 1124px) {
+  .board__sidebar section {
+    grid-template-columns: 65% 35%;
+  }
+}
+@media (max-width: 840px) {
+  .board__sidebar section {
+    grid-template-columns: 1fr;
+    padding: 0 6px;
+  }
+}

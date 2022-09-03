@@ -1,0 +1,611 @@
+@import "./taker";
+@import "./helper/topic";
+@import "./helper/webKitScroll";
+@import "./helper/newTopicModal";
+.slided-content {
+  margin: 40px 0 20px 0;
+}
+
+#dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 50px;
+  .teams {
+    .tm-block {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      .lab {
+        p {
+          font: 400 15px/19px "Montserrat";
+          color: #424242;
+          text-transform: uppercase;
+        }
+        .pls {
+          margin-top: 10px;
+          box-sizing: border-box;
+          background: #ffffff 0% 0% no-repeat padding-box;
+          box-shadow: 0px 0px 10px #b1b1b129;
+          border-radius: 5px;
+          font: normal normal normal 15px/19px "Montserrat";
+          color: #d8232a;
+          padding: 12px 15px;
+          height: 43px;
+        }
+      }
+    }
+
+    .under-team-rate {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      .first-block {
+        .lab {
+          margin-top: 20px;
+          @include lab;
+        }
+      }
+      .second-block {
+        margin-top: 20px;
+        .attached {
+          height: 136px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .rate-pic {
+            position: relative;
+            margin-top: 0;
+            span {
+              position: absolute;
+              font: 500 15px/19px "Montserrat";
+              letter-spacing: 0px;
+              color: #424242;
+              left: 62px;
+              top: 52px;
+              z-index: 10;
+            }
+            img {
+              position: absolute;
+            }
+          }
+          .gm-tm {
+            margin-top: 40px;
+            p {
+              font: 400 15px/19px "Montserrat";
+              color: #424242;
+              text-transform: uppercase;
+            }
+            .game {
+              margin-top: 10px;
+              box-sizing: border-box;
+              width: 100%;
+              height: 43px;
+              background: #ffffff 0% 0% no-repeat padding-box;
+              box-shadow: 0px 0px 10px #b1b1b129;
+              border-radius: 5px;
+              font: normal normal normal 15px/19px "Montserrat";
+              color: #d8232a;
+              padding: 12px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .dash-rates {
+    padding-right: 16px;
+    .rate-block {
+      margin-bottom: 48px;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font: normal normal normal 15px/19px "Montserrat";
+          color: #424242;
+          text-transform: uppercase;
+        }
+        span {
+          font: normal normal normal 15px/19px "Montserrat";
+          color: #d8232a;
+        }
+      }
+      .rate-bar {
+        margin-top: 10px;
+        width: 100%;
+        height: 15px;
+        background: #f0f0f0 0% 0% no-repeat padding-box;
+        border-radius: 5px;
+        .bar {
+          width: 40%;
+          height: 100%;
+          border-radius: 5px;
+          background: #ff9c9c;
+        }
+      }
+    }
+  }
+}
+
+#about-content {
+  width: 100%;
+
+  .tm-block {
+    width: 500px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
+    .lab {
+      p {
+        font: 400 15px/19px "Montserrat";
+        color: #424242;
+        text-transform: uppercase;
+      }
+      .pls {
+        margin-top: 10px;
+        box-sizing: border-box;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 10px #b1b1b129;
+        border-radius: 5px;
+        font: normal normal normal 15px/19px "Montserrat";
+        color: #d8232a;
+        padding: 12px 15px;
+        height: 43px;
+      }
+
+      .dropdown-console {
+        @include dropdown;
+      }
+    }
+  }
+}
+
+#teams-content {
+  h4 {
+    font: normal normal normal 15px/19px "Montserrat";
+    color: #424242;
+    text-transform: uppercase;
+  }
+  .all-teams {
+    width: 97%;
+    .team {
+      margin-top: 10px;
+      width: 100%;
+      height: 80px;
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      grid-gap: 10px;
+      grid-auto-flow: column;
+
+      .teamName {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 10px #b1b1b129;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 50px;
+        .logo-team {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          img {
+            width: auto;
+            height: 60px;
+          }
+          span {
+            font: normal normal normal 15px/19px "Montserrat";
+            color: #d8232a;
+            text-transform: capitalize;
+            white-space: nowrap;
+          }
+        }
+        p {
+          display: block;
+          font: 400 16px/19px "Montserrat";
+          color: #424242;
+        }
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        background: #ebebeb 0% 0% no-repeat padding-box;
+        font: 500 18px/22px "Montserrat";
+        color: #ffffff;
+        transition: all 0.3s ease;
+        &:hover {
+          background: #2b2b2b;
+        }
+      }
+    }
+  }
+}
+
+#forums-content {
+  width: 99%;
+  h3 {
+    font: normal normal bold 20px/24px "Montserrat";
+    color: #424242;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  #topic {
+    @include topic;
+  }
+  .table .tb-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font: 500 18px/22px "Montserrat";
+    color: #d8232a;
+    border-bottom: 1px solid #aaaaaa;
+
+    .topic-info {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 50px;
+    }
+
+    @media (max-width: 800px) {
+      font: 500 14px/19px "Montserrat";
+      .topic-info {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+      }
+    }
+    @media (max-width: 450px) {
+      font: 500 13px/16px "Montserrat";
+      .topic-info {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 3px;
+      }
+    }
+  }
+
+  .create-topic {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font: 500 18px/22px "Montserrat";
+    color: #2b2b2b;
+    a {
+      color: #d8232a;
+    }
+  }
+}
+
+#contracts-content {
+  width: 99%;
+  h3 {
+    font: normal normal bold 20px/24px "Montserrat";
+    color: #424242;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  #topic {
+    @include topic;
+    grid-template-columns: 1fr 270px;
+    @media (max-width: 1124px) {
+      grid-template-columns: 1fr 200px;
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr 180px;
+    }
+  }
+
+  @mixin container {
+    display: grid;
+    grid-template-columns: 234px 1fr;
+    grid-gap: 83px;
+    @media (max-width: 1124px) {
+      grid-template-columns: 180px 1fr;
+      grid-gap: 40px;
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 154px 1fr;
+      grid-gap: 16px;
+    }
+    @media (max-width: 430px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .organization {
+    padding: 12px 0;
+    @include container;
+    p {
+      text-align: left;
+      font: 400 18px/22px "Montserrat";
+      color: #d8232a;
+    }
+    @media (max-width: 1124px) {
+      p {
+        font: 400 16px/20px "Montserrat";
+      }
+    }
+  }
+  .describing {
+    border-top: 1px solid #aaaaaa;
+    padding: 30px 0;
+    @include container;
+    .image-block {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    p {
+      display: block;
+      width: 610px;
+      max-width: 100%;
+      font: normal normal normal 16px/24px "Montserrat";
+      color: #2b2b2b;
+    }
+    @media (max-width: 1410px) {
+      p {
+        width: 90%;
+      }
+    }
+    @media (max-width: 1124px) {
+      p {
+        width: 95%;
+        font: normal normal normal 14px/16px "Montserrat";
+      }
+    }
+  }
+}
+
+#myModal {
+  &.modal {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s ease;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: opa;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+
+      & .modal-body {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+      }
+    }
+  }
+
+  & .modal-body {
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 225px;
+    max-width: 780px;
+    padding: 79px 165px;
+    box-sizing: border-box;
+    // transition: all 0.5s ease;
+    background: url('../image/modal-back.png') center/cover no-repeat;
+    background-size: cover;
+  }
+
+  & .modal-header {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+  }
+
+  /* Modal Content*/
+  & .modal-content {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    color: #2B2B2B;
+    background-color: #fff;
+
+
+    &-item {
+      padding: 25px 10px 39px;
+
+      & h2 {
+
+        padding-bottom: 21px;
+        font: bold 35px/41px "Helvetica Neue LT Std";
+        letter-spacing: 0px;
+        color: #D8232A;
+        text-transform: uppercase;
+        opacity: 1;
+      }
+
+      & h3 {
+        padding: 0px 27px 0px;
+        font: bold 18px/26px "Montserrat";
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+      }
+
+      & p {
+        text-align: center;
+        padding-top: 9px;
+        font: normal 16px/26px "Helvetica Neue LT Std";
+        letter-spacing: 0px;
+        padding-bottom: 40px;
+
+      }
+
+      & button {
+        border: none;
+        outline: none;
+        width: 140px;
+        height: 43px;
+        background-color: #D8232A;
+        box-shadow: 0px 0px 6px #00000029;
+        border-radius: 5px;
+        font: normal normal normal 15px/19px "Montserrat";
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      & button:first-child {
+        background-color: #000000;
+        margin-right: 45px;
+      }
+    }
+
+
+  }
+
+  .btn-close-header {
+    cursor: pointer;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+    & svg path {
+      transition: all 0.3s ease;
+      fill: #fff;
+    }
+
+    &:hover {
+      & svg path {
+        fill: #D8232A;
+      }
+    }
+
+  }
+
+  .btn-close-header:hover,
+  .btn-close-header:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+// Modal 
+
+@media (max-width: 1336px) {
+  #teams-content .all-teams .team {
+    grid-template-columns: 1fr 164px;
+    .teamName p {
+      font: 400 13px/16px "Montserrat";
+    }
+    .teamName .logo-team {
+      gap: 10px;
+      img {
+        height: 46px;
+      }
+      span {
+        font: normal normal normal 13px/16px "Montserrat";
+        white-space: initial;
+        word-wrap: normal;
+        width: 46px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1124px) {
+  #dashboard-content {
+    grid-gap: 16px;
+  }
+  #teams-content .all-teams .team {
+    grid-template-columns: 80% 20%;
+    .teamName {
+      gap: 16px;
+    }
+    button {
+      font: 500 16px/20px "Montserrat";
+    }
+  }
+}
+@media (max-width: 900px) {
+  .modal-body {
+    max-width: 600px;
+    padding: 79px 80px;
+  }
+}
+@media (max-width: 650px) {
+  .modal-body {
+    max-width: 475px;
+    padding: 43px 52px;
+  }
+}
+
+@media (max-width: 500px) {
+  #dashboard-content {
+    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 40px;
+  }
+  #teams-content .all-teams .team .teamName .logo-team {
+    flex-direction: column;
+  }
+  #teams-content .all-teams .team button {
+    font: 500 14px/16px "Montserrat";
+  }
+  #teams-content .all-teams .team {
+    grid-gap: 1px;
+  }
+  #teams-content .all-teams {
+    width: 99%;
+  }
+
+  .modal-body {
+    max-width: 375px;
+    padding: 43px 34px;
+  }
+  .modal-content-item h2 {
+    padding-bottom: 19px;
+    font: bold 30px/39px "Helvetica Neue LT Std";
+  }
+  .modal-content-item h3 {
+    padding: 0px 15px 0px;
+    font: bold 16px/23px "Montserrat";
+  }
+  .modal-content-item p {
+    font: normal 14px/26px "Helvetica Neue LT Std";
+    padding-bottom: 20px;
+  }
+  .modal-content-item button:first-child {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 375px) {
+  .modal-body {
+    max-width: 300px;
+    padding: 43px 30px;
+  }
+  .modal-content-item button:first-child {
+    margin-bottom: 20px;
+  }
+}
+@include newTopicModal;
+@include webKitScroll;
