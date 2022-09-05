@@ -59,6 +59,27 @@ To be Added:
 
     * Set up Template
     * Set up initial File and Folder Structure
-    * Setup intiial node packages
+    * Setup intitial node packages
     * Initialized React
     * Began README
+
+**0.01 - Server Setup**
+
+    * Configured server.js
+    * Configured connection.js
+    * Added node packages
+        * Root:
+            * Added concurrently
+            * Added optional-require
+            * Added graphql
+        * Server:
+            * Added apollo-server-express
+            * Added bcrypt
+            * Added express
+            * Added graphql
+            * Added mongoose
+            * Added jsonwebtoken
+            * Added nodemon
+
+        * Client:
+            * 

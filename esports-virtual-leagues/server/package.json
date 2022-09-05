@@ -5,12 +5,26 @@
   "main": "server.js",
   "scripts": {
     "test": "run test",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
-    "url": "\"\""
+    "url": "git+https://github.com/MLyjak1/Level-Up-Coding.git"
   },
-  "author": "mlyjak1",
-  "license": "ISC"
+  "keywords": [],
+  "author": "Matthew Lyjak",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.10.2",
+    "bcrypt": "^5.0.1",
+    "express": "^4.18.1",
+    "graphql": "^16.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
