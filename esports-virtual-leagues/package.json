@@ -18,7 +18,7 @@
     "concurrently": "^7.3.0"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server/server.js --ignore client",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
@@ -36,12 +36,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MLyjak1/esports-virtual-leagues/issues"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
