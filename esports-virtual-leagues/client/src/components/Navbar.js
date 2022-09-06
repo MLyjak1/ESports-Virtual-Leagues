@@ -21,15 +21,15 @@ const Navbar = () => {
         <Link to="/discord">Discord</Link>
       </div>
       <div className="chapter">
-        <h1>HOME</h1>
-        {/* <h2>Esports Virtual Leagues</h2> */}
+        <h1>ESPORTS VIRTUAL LEAGUES</h1>
+        <h2>HOME</h2>
       </div>
       <div className="links">
         <Link to="/leagues">Leagues</Link>
         <Link to="/stats">Stats</Link>
       </div>
       <div className="signup-in">
-        <Link to="/sign">Sign In</Link>
+        <Link to="/sign">Sign In/</Link>
         <Link to="/sign">Sign Up</Link>
       </div>
     </div>

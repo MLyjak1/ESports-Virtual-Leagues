@@ -41,17 +41,17 @@
 }
 
 .net-overlay{
-  height: 1000px;
+  height: 318px;
   width: 100%;
   background-image: url("./assets/imgs/soccer-net.jpg");
   background-size:cover;
 }
 
 .navbar-bg {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   margin-top: -7px;
   width: 100%;
-  height: 250px;
+  height: 318px;
   background-image: url("./assets/imgs/background.png");
   background-size: cover;
   background-position: center;
@@ -66,11 +66,11 @@
 } */
 
 .img-logo {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   margin-bottom: auto;
 }
 
-.main-title{
+/* .main-title{
   border: 3px solid black;
   min-width: fit-content;
   margin: auto;
@@ -78,10 +78,10 @@
   margin-left: 35%;
   padding-bottom: 1.2%;
   font-size: 55px;
-}
+} */
 
 .chapter {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   text-align: center;
   margin-top: auto;
 }
@@ -89,20 +89,22 @@
 .chapter h1 {
   color: rgba(0, 0, 0, 0);
   text-shadow: 0 0 2px #fff;
-  font: normal normal bold 100px/120px "Helvetica Neue LT Std";
-  margin: 2%;
-  text-transform: uppercase;
-  opacity: 0.66;
+  font: normal normal bold "Helvetica Neue LT Std";
+  white-space: nowrap;
+  opacity: 0.86;
 }
 .chapter h2 {
   color: #fff;
   text-shadow: 1px 1px 1px rgb(96, 96, 96);
-  font: normal normal bold 60px/70px Helvetica Neue LT Std;
-  margin: 2%;
+  font: normal normal bold 60px/100px Helvetica Neue LT Std;
+  margin: 8%;
+  margin-top:28%;
+  text-transform: uppercase;
 }
 
+
 .links {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -114,12 +116,12 @@
 }
 
 .links a {
-  color: #61dafb;
+  /* color: #61dafb; */
   /* border: 3px solid blue; */
   margin-top: 2%;
   margin-right: 2%;
   margin-left: 2%;
-  padding: 5%;
+  padding: 4%;
   max-width: 20px;
   min-width: fit-content;
   border-top-left-radius: 10%;
@@ -134,17 +136,30 @@
 .links a:hover{
   background-color: transparent;
   color: #282c34;
-  border: 3px solid #282c34;
+  text-decoration: underline;
+  /* border: 1px solid #282c34; */
 }
 
 
-.signup-in {
+.signup-in{
   /* border: 3px solid yellow; */
   margin-bottom: auto;
   margin-top: 0.3%;
-  margin-right: 0.3%;
   padding:2%;
   border-radius: 100%;
+  background-color:#3f3f3f;  
+}
 
+.signup-in a{
+  font: normal normal bolder "Helvetica Neue LT Std";
+  text-decoration: none;
+  color: rgb(201, 201, 201);
+  font-weight: 800;
+}
+
+.signup-in:hover{
+text-decoration: underline;
+background-color: transparent;
+border: 1px solid rgb(201, 201, 201);
 }
 

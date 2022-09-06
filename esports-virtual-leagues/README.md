@@ -112,3 +112,12 @@ To be Added:
     * Tested links to each page - PASSED
 
 **0.05 - Initial Navbar Styling**
+
+    * Added colors and backgrounds to Link buttons
+    * Added hover styles to Link buttons
+    * Adjusted Title Headings
+    * Added Styling to Sign in/up button
+    * Added Hover style to Sign in/Up button
+    * Added Net underlay to navebar for texture
+
+**0.06 - Initial Sign-Up Functionality**
