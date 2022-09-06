@@ -82,4 +82,33 @@ To be Added:
             * Added nodemon
 
         * Client:
-            * 
+            * Added apollo/client
+            * Added testing dependencies
+            * Added express
+            * Added graphql
+            * Added jwt-decode
+            * Added react dependencies
+            * Added web-vitals
+
+**0.02 - Home Page Setup**
+
+    * Imported react and router to app.js
+    * Set up homepage route
+    * Tested homepage - PASSED
+
+**0.03 - Navbar Setup**
+
+    * Added navbar Picture
+    * Added logo image
+    * Added Links to About, Rules, Discord, Leagues, and Stats
+    * Added Sign-in/Sign-up Link
+    * Added Title Heading
+    * Formatted layout to wireframe template - Styling still needed
+    * Made Layout flexible for variblae screen sizes - media queries still needed
+
+**0.04 - Added Routes to Initial Pages**
+
+    * Added Routes in app.js for pages in Navbar
+    * Tested links to each page - PASSED
+
+**0.05 - Initial Navbar Styling**
