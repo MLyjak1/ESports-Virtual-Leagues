@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../assets/imgs/logo.png';
-import netting from '../assets/imgs/soccer-net.jpg';
+
 
 
 
@@ -29,8 +29,8 @@ const Navbar = () => {
         <Link to="/stats">Stats</Link>
       </div>
       <div className="signup-in">
-        <Link to="/sign">Sign In/</Link>
-        <Link to="/sign">Sign Up</Link>
+        <Link to="/signin">Sign In/</Link>
+        <Link to="/signin">Sign Up</Link>
       </div>
     </div>
   </div>

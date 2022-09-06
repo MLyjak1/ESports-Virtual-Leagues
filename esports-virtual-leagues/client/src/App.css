@@ -40,11 +40,13 @@
   }
 }
 
-.net-overlay{
+/* Navbar Styling */
+
+.net-overlay {
   height: 318px;
   width: 100%;
   background-image: url("./assets/imgs/soccer-net.jpg");
-  background-size:cover;
+  background-size: cover;
 }
 
 .navbar-bg {
@@ -97,15 +99,15 @@
   color: #fff;
   text-shadow: 1px 1px 1px rgb(96, 96, 96);
   font: normal normal bold 60px/100px Helvetica Neue LT Std;
-  margin: 8%;
-  margin-top:28%;
+  margin: 18%;
+  margin-top: 25%;
+  margin-right: 25%;
   text-transform: uppercase;
 }
 
-
 .links {
   /* border: 3px solid black; */
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: flex-end;
@@ -133,33 +135,236 @@
   text-decoration: none;
 }
 
-.links a:hover{
+.links a:hover {
   background-color: transparent;
   color: #282c34;
   text-decoration: underline;
   /* border: 1px solid #282c34; */
 }
 
-
-.signup-in{
+.signup-in {
   /* border: 3px solid yellow; */
   margin-bottom: auto;
   margin-top: 0.3%;
-  padding:2%;
+  padding: 2%;
   border-radius: 100%;
-  background-color:#3f3f3f;  
+  background-color: #3f3f3f;
 }
 
-.signup-in a{
+.signup-in a {
   font: normal normal bolder "Helvetica Neue LT Std";
   text-decoration: none;
   color: rgb(201, 201, 201);
   font-weight: 800;
 }
 
-.signup-in:hover{
-text-decoration: underline;
-background-color: transparent;
-border: 1px solid rgb(201, 201, 201);
+.signup-in:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  border: 1px solid rgb(201, 201, 201);
 }
 
+/* Sign-in/up Page Styling */
+
+.form-content {
+  margin: 49px auto 120px auto;
+  max-width: 100%;
+  width: 570px;
+  height: auto;
+  background: #ffffffcb 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+}
+
+.form-content h2 {
+  padding-top: 32px;
+  text-align: center;
+  font: 600 30px/50px "Montserrat";
+  color: #010101;
+}
+
+.innerform {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 34px;
+}
+
+.innerform input {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #b1b1b129;
+  border-radius: 5px;
+  font: 400 15px/19px "Montserrat";
+  color: #222222;
+  padding: 12px 15px;
+  height: 43px;
+}
+
+.innerform .dropdown-console {
+  position: relative;
+}
+
+.innerform .dropdown-console .selected {
+  position: relative;
+  margin-top: 10px;
+  box-sizing: border-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #b1b1b129;
+  border-radius: 5px;
+  font: normal normal normal 15px/19px "Montserrat";
+  color: #d8232a;
+  padding: 12px 15px;
+  height: 43px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.innerform .dropdown-console .selected {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.innerform .dropdown-console .selected p {
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.innerform .dropdown-console .selected p {
+  color: #2b2b2b;
+}
+
+.innerform .dropdown-console .selected .dropdown-img {
+  position: absolute;
+  right: 30px;
+  top: 12px;
+}
+
+.innerform .dropdown-console .dropdown-content {
+  display: none;
+  z-index: 99;
+}
+
+.innerform .dropdown-console .dropdown-content {
+  position: absolute;
+  top: 44px;
+  width: 100%;
+}
+
+.innerform .dropdown-console .dropdown-content .select-new {
+  box-sizing: border-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 5px #b1b1b129;
+  border-radius: 1px;
+  font: normal normal normal 15px/19px "Montserrat";
+  padding: 12px 15px;
+  height: 43px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.innerform .dropdown-console .dropdown-content .select-new:last-child {
+  border-radius: 0 0 8px 0px;
+}
+
+.innerform .dropdown-console .dropdown-content .select-new p {
+  color: #bcbcbc;
+  text-transform: none;
+}
+
+.innerform .dropdown-console .dropdown-content .select-new img {
+  filter: grayscale(100%);
+  width: auto;
+  max-height: 22px;
+}
+
+.innerform .robot-stack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.innerform .robot-stack {
+  flex-direction: column; }
+
+.innerform .robot-stack .checkbox {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.innerform .robot-stack .checkbox p {
+  font: normal normal normal 15px/19px "Montserrat";
+  color: #808080;
+}
+
+.innerform .robot-stack button {
+  border: none;
+  outline: none;
+  width: 140px;
+  height: 43px;
+  background: #000000 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+  border-radius: 5px;
+  font: normal normal normal 15px/19px "Montserrat";
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.innerform .robot-stack button:hover {
+  opacity: 0.8;
+}
+.innerform .sign-here {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerform .sign-here p {
+  text-align: center;
+  font: normal normal normal 15px/19px "Montserrat";
+  color: #2b2b2b;
+}
+
+.innerform .sign-here p a {
+  color: #f2186a;
+}
+
+.innerform .sign-here p {
+  font: normal normal normal 13px/16px "Montserrat"; }
+
+.item-check {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  width: 24px;
+  height: 24px;
+}
+
+.item-check .check-recaptcha {
+  margin: 4px 0px 0 0;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 16px;
+  color: #404040;
+  font: 400 16px/16px "futura-pt-book";
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 19;
+}
