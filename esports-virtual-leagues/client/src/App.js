@@ -7,10 +7,14 @@ import React from 'react';
 // } from "@apollo/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// import './App.css';
+import './App.css';
 
 import Home from "./pages/Home";
 import Navbar from './components/Navbar';
+import About from "./pages/About";
+import Leagues from "./pages/Leagues";
+import Rules from "./pages/Rules";
+import Stats from "./pages/Stats";
 
 // const httpLink = createHttpLink({
 //   uri: "/graphql",
@@ -41,6 +45,10 @@ function App() {
 		 		</div>
 				<Routes>
     <Route path="/" element={<Home />} />
+	<Route path="/about" element={<About />} />
+	<Route path="/rules" element={<Rules />} />
+	<Route path="/Leagues" element={<Leagues />} />
+	<Route path="/Stats" element={<Stats />} />
 		 		</Routes>
 			</Router>
 		// </ApolloProvider>

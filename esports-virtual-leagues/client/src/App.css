@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-lt-std-6");
+
 .App {
   text-align: center;
 }
@@ -36,3 +39,89 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.navbar-bg {
+  border: 3px solid black;
+  margin-top: -7px;
+  width: 100%;
+  height: 318px;
+  background-image: url("./assets/imgs/background.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .navbar-wrap{
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.img-logo {
+  border: 3px solid green;
+  margin-bottom: auto;
+}
+
+.main-title{
+  border: 3px solid black;
+  min-width: fit-content;
+  margin: auto;
+  margin-right:33%;
+  margin-left: 35%;
+  padding-bottom: 1.2%;
+  font-size: 55px;
+}
+
+.chapter {
+  border: 3px solid black;
+  text-align: center;
+  margin-top: auto;
+}
+
+.chapter h1 {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 2px #fff;
+  font: normal normal bold 100px/120px "Helvetica Neue LT Std";
+  margin: 2%;
+  text-transform: uppercase;
+  opacity: 0.36;
+}
+.chapter h2 {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgb(96, 96, 96);
+  font: normal normal bold 60px/70px Helvetica Neue LT Std;
+  margin: 2%;
+}
+
+.links {
+  border: 3px solid black;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: center;
+  margin-top: auto;
+  max-height: 200px;
+  min-width: 25%;
+}
+
+.links a {
+  color: #61dafb;
+  border: 3px solid blue;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 5%;
+  max-width: 20px;
+  min-width: fit-content;
+}
+
+
+.signup-in {
+  border: 3px solid yellow;
+  margin-bottom: auto;
+  padding:2%;
+}
+

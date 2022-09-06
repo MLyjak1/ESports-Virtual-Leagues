@@ -1,13 +1,13 @@
 import React from "react";
 
-const Home = () => {
+const Rules = () => {
 
     return (
         
-           <h1>TEST</h1> 
+           <h1>RULES$$$$$</h1> 
         
         
     )
 };
 
-export default Home;
+export default Rules;
