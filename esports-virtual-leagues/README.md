@@ -112,3 +112,35 @@ To be Added:
     * Tested links to each page - PASSED
 
 **0.05 - Initial Navbar Styling**
+
+    * Added colors and backgrounds to Link buttons
+    * Added hover styles to Link buttons
+    * Adjusted Title Headings
+    * Added Styling to Sign in/up button
+    * Added Hover style to Sign in/Up button
+    * Added Net underlay to navebar for texture
+
+**0.061 - Initial Sign-Up Functionality**
+
+    * Added SignUp Route
+    * Tested SignUp Route - PASSED
+    * Added Form Section
+    * Added Email, Gametag, Password, and Confirm Password Input Fields
+    * Added Console Dropdown
+        * FORCE installed react-dropdown package 
+    * Added dropdown.js in helpers folder
+        * Added dropdown logic
+    * Added recaptcha checkbox PLACEHOLDER
+    * Added Submit Button
+    * Added Link to SignIn form
+
+**0.065 - Initial Sign-In Form**
+
+    * Added SignIn Route
+    * Tested SignIn Route - PASSED
+    * Added Form Section
+    * Added Email/Gametag, Password Input Fields
+    * Added Console Dropdown
+    * Added recaptcha checkbox PLACEHOLDER
+    * Added Submit Button 
+    * Added Link to SingUp Form   
