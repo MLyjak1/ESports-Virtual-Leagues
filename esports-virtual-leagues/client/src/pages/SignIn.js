@@ -1,10 +1,13 @@
 import React from "react";
 import { Link, useNavigate } from 'react-router-dom';
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 import xboxXSImg from '../assets/imgs/xboxx.png';
 import xboxImg from '../assets/imgs/xbox.png';
-import dropdownImg from '../assets/imgs/dropdown-arrow.png';
 import secureImg from '../assets/imgs/secure.png';
+
+const consoleOpts = ['Xbox Series X/S', 'Xbox One'];
 
 const SignIn = () => {
 
@@ -17,25 +20,7 @@ const SignIn = () => {
                         type="email"
                         placeholder="Email Address/Gamertag"
                         name="email" />
-                    <div className="dropdown-console">
-                        <div className="selected">
-                            <img src={xboxXSImg} />
-                            <p>Xbox Series X/S</p>
-                            <div className="dropdown-img">
-                                <img src={dropdownImg} />
-                            </div>
-                            <div className="dropdown-content">
-                                <div className="select-new">
-                                    <img src={xboxXSImg} />
-                                    <p>XBox Series X/S</p>
-                                </div>
-                                <div className="select-new">
-                                    <img src={xboxImg} />
-                                    <p>XBox One</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Dropdown options={consoleOpts} placeholder="Please Select your Console" />
                     <input
                         type="password"
                         placeholder="Password (6 to 12 characters)"

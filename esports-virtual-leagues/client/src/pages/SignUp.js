@@ -1,11 +1,15 @@
 import React from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import Dropdown from '../helpers/dropdown'
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
 import xboxXSImg from '../assets/imgs/xboxx.png';
 import xboxImg from '../assets/imgs/xbox.png';
-import dropdownImg from '../assets/imgs/dropdown-arrow.png';
+
 import secureImg from '../assets/imgs/secure.png';
+
+const consoleOpts = ['Xbox Series X/S', 'Xbox One'];
+
 
 const SignUp = () => {
 
@@ -22,13 +26,7 @@ const SignUp = () => {
                         type="text"
                         placeholder="Gamertag"
                         name="tag" />
-                    <Dropdown
-                  trigger={['click']}
-                  overlay={menu}
-                  animation="slide-up"
-                  onVisibleChange={onVisibleChange}>
-                  <img src={dropdownImg}/>
-                </Dropdown>
+                    <Dropdown options={consoleOpts} placeholder="Please Select your Console" />
                     
                     <input
                         type="password"
